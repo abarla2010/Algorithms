@@ -9,7 +9,12 @@ import common.CommandLineOutput;
 public class InsertionSort extends SortingRepository{
 
 
-	public static int[] doInsertionSort(int[] array){
+	public static int[] doInsertionSort(int[] inputArray){
+
+		int[] array = new int[inputArray.length];
+
+		//Making a copy of the inputArray to display the unsorted array as well, after sorting
+		System.arraycopy(inputArray, 0, array, 0, inputArray.length);
 
 		int key = 0;
 		int i = 0;
