@@ -19,20 +19,20 @@ public class InsertionSort extends SortingRepository{
 		int key = 0;
 		int i = 0;
 
+		// Loop through the entire array from the key
 		for(int j=1; j<array.length; j++)
 		{
 			key = array[j];
 			i = j-1;
 
 			//Shifting if key is less than previous number
-			while(i>0 && array[i]>key)
+			while(i>=0 && array[i]>key)
 			{
 				array[i+1] = array[i];
 				i = i-1;
 			}
 			array[i+1] = key;
 		}
-
 		return array;
 	}
 
