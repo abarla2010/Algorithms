@@ -1,7 +1,7 @@
-package searching;
+package sorting;
 
 /**
  * Created by abhishekbarla on 10/11/16.
  */
-public class BinarySearch {
+public class QuickSort {
 }
