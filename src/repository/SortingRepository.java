@@ -1,6 +1,6 @@
-package sorting;
+package repository;
 
-import common.GenericRepository;
+import repository.GenericRepository;
 
 /**
  * Created by abhishekbarla on 10/10/16.

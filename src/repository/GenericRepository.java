@@ -1,4 +1,6 @@
-package common;
+package repository;
+
+import common.Constants;
 
 import java.util.Random;
 

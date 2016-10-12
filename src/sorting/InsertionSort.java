@@ -1,12 +1,14 @@
 package sorting;
 
 import common.CommandLineOutput;
+import repository.SortingRepository;
 
 /**
  * Created by abhishekbarla on 10/10/16.
  * Insertion Sort Implementation (in-place)
  */
-public class InsertionSort extends SortingRepository{
+//TODO: Insert the time complexity in the comments section of each relevant class
+public class InsertionSort extends SortingRepository {
 
 
 	public static int[] doInsertionSort(int[] inputArray){
