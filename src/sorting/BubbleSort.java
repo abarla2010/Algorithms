@@ -27,7 +27,7 @@ public class BubbleSort {
 				if (array[i] > array[i + 1])
 				{
 					//Swap
-					array = CommonUtility.swapNumbersIn1DArray(i, i + 1, array);
+					array = CommonUtility.swap(i, i + 1, array);
 
 					//Continues until no further swaps occur
 					flag = true;
