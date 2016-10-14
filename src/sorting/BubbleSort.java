@@ -3,6 +3,8 @@ package sorting;
 import util.CommandLineOutput;
 import util.CommonUtility;
 
+import static util.CommonUtility.swap;
+
 /**
  * Created by abhishekbarla on 10/10/16.
  */
@@ -27,7 +29,7 @@ public class BubbleSort {
 				if (array[i] > array[i + 1])
 				{
 					//Swap
-					array = CommonUtility.swap(i, i + 1, array);
+					array = swap(i, i + 1, array);
 
 					//Continues until no further swaps occur
 					flag = true;
