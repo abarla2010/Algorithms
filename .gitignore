@@ -5,7 +5,7 @@
 .externalToolBuilders
 
 # IntelliJ
-.idea
+.idea/*
 *.iml
 *.svn
 out
