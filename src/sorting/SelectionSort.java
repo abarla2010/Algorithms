@@ -1,13 +1,13 @@
 package sorting;
 
-import common.CommandLineOutput;
-import repository.SortingRepository;
+import util.CommandLineOutput;
+import util.CommonUtility;
 
 /**
  * Created by abhishekbarla on 10/12/16.
  * TODO
  */
-public class SelectionSort extends SortingRepository {
+public class SelectionSort {
 
 
 	public static int[] doSelectionSort(int[] inputArray){
@@ -46,7 +46,7 @@ public class SelectionSort extends SortingRepository {
 
 	public static void main(String[] args){
 
-		int[] unsortedArray = getRandomUnsortedArray();
+		int[] unsortedArray = CommonUtility.randomArrayGenerator();
 		long startTime = System.nanoTime();
 		int[] sortedArray = doSelectionSort(unsortedArray);
 		long endTime = System.nanoTime();

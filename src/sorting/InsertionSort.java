@@ -1,14 +1,14 @@
 package sorting;
 
-import common.CommandLineOutput;
-import repository.SortingRepository;
+import util.CommandLineOutput;
+import util.CommonUtility;
 
 /**
  * Created by abhishekbarla on 10/10/16.
  * Insertion Sort Implementation (in-place)
  */
 //TODO: Insert the time complexity in the comments section of each relevant class
-public class InsertionSort extends SortingRepository {
+public class InsertionSort {
 
 
 	public static int[] doInsertionSort(int[] inputArray){
@@ -40,7 +40,7 @@ public class InsertionSort extends SortingRepository {
 
 	public static void main (String args[]){
 
-		int[] unsortedArray = getRandomUnsortedArray();
+		int[] unsortedArray = CommonUtility.randomArrayGenerator();
 		long startTime = System.nanoTime();
 		int[] sortedArray = doInsertionSort(unsortedArray);
 		long endTime = System.nanoTime();

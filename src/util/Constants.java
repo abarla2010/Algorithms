@@ -1,4 +1,4 @@
-package common;
+package util;
 
 /**
  * Created by abhishekbarla on 10/10/16.

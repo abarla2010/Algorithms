@@ -1,13 +1,13 @@
 package sorting;
 
-import common.CommandLineOutput;
-import repository.SortingRepository;
+import util.CommandLineOutput;
+import util.CommonUtility;
 
 /**
  * Created by abhishekbarla on 10/12/16.
  * Insertion Sort to sort in decreasing order (In-place)
  */
-public class DecreasingInsertionSort extends SortingRepository {
+public class DecreasingInsertionSort {
 
 	public static int[] doReverseInsertionSort (int[] inputArray) {
 
@@ -38,7 +38,7 @@ public class DecreasingInsertionSort extends SortingRepository {
 
 	public static void main(String[] args){
 
-		int[] unsortedArray = getRandomUnsortedArray();
+		int[] unsortedArray = CommonUtility.randomArrayGenerator();
 		long startTime = System.nanoTime();
 		int[] sortedArray = doReverseInsertionSort(unsortedArray);
 		long endTime = System.nanoTime();

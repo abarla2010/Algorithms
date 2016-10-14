@@ -1,8 +1,8 @@
 package searching;
 
-import common.CommandLineOutput;
-import common.Constants;
-import repository.SearchingRepository;
+import util.CommandLineOutput;
+import util.Constants;
+import util.CommonUtility;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -12,7 +12,7 @@ import java.util.Random;
  * Linear Search Algorithm to find if a key exists in a random array. If the key exists, then the algorithm returns the
  * position of the key in the array
  */
-public class LinearSearch extends SearchingRepository {
+public class LinearSearch {
 
 	public static ArrayList doLinearSearch(int key, int[] inputArray){
 
@@ -33,7 +33,7 @@ public class LinearSearch extends SearchingRepository {
 
 	public static void main(String[] args){
 
-		int[] searchArray = getRandomUnsortedArray();
+		int[] searchArray = CommonUtility.randomArrayGenerator();
 		int key = 0;
 
 		Random random = new Random();
