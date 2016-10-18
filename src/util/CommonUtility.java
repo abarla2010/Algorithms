@@ -8,7 +8,7 @@ import java.util.Random;
  */
 public class CommonUtility {
 
-	public static int[] swapNumbersIn1DArray(int number1, int number2, int[] array){
+	public static int[] swap(int number1, int number2, int[] array){
 
 		int temp = array[number1];
 		array[number1] = array[number2];
