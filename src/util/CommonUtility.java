@@ -1,6 +1,7 @@
 package util;
 
 import java.util.Random;
+import java.util.Scanner;
 
 import static sorting.InsertionSort.doInsertionSort;
 
@@ -70,6 +71,18 @@ public class CommonUtility {
 		}
 
 		return array;
+	}
+
+	public static String getStringFromCommandLine(String inputMessage){
+
+		String userInputString = "";
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println(inputMessage);
+		userInputString = sc.nextLine();
+
+		return userInputString;
+
 	}
 
 }

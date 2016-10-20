@@ -7,6 +7,25 @@ import java.util.ArrayList;
  */
 public class CommandLineOutput {
 
+	public static void generalOutput(String problemType, Object input, Object output){
+
+		System.out.println("*************************************");
+		System.out.println("Results of \'" + problemType + "\'");
+		System.out.println("*************************************");
+
+		//Priting the input
+		System.out.println("The input is:");
+		System.out.println(input.toString());
+		System.out.println("*************************************");
+
+		//Printing the output
+		//Priting the input
+		System.out.println("The output is:");
+		System.out.println(output.toString());
+		System.out.println("*************************************");
+
+	}
+
 	public static void sortingOutput(String sortingType, int[] unsortedArray, int[] sortedArray, long sortingTime) {
 		System.out.println("*************************************");
 		System.out.println(sortingType + " Results");
