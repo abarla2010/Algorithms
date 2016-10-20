@@ -7,7 +7,7 @@ import static sorting.InsertionSort.doInsertionSort;
 
 /**
  * Created by abhishekbarla on 10/14/16.
- * Contains commonly used functions in the project
+ * A common utility class for the project
  */
 public class CommonUtility {
 
@@ -73,6 +73,11 @@ public class CommonUtility {
 		return array;
 	}
 
+	/**
+	 * Gets user input as String from command line
+	 * @param inputMessage
+	 * @return
+	 */
 	public static String getStringFromCommandLine(String inputMessage){
 
 		String userInputString = "";
