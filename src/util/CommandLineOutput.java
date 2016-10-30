@@ -1,6 +1,7 @@
 package util;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 /**
  * Created by abhishekbarla on 10/10/16.
@@ -75,6 +76,10 @@ public class CommandLineOutput {
 	 */
 	public static void searchingOutput(String searchingType, ArrayList index, int key, int[] searchArray, long searchingTime){
 
+		//Sorting the Result Arraylist
+		Collections.sort(index);
+
+
 		//Failed Search Output
 		if(index.contains(-1)) {
 			System.out.println("*************************************");
@@ -84,7 +89,6 @@ public class CommandLineOutput {
 			System.out.println(key+" doesn't exist in:");
 
 			//Printing out the searchArray
-			//System.out.println("in:");
 			for(int i=0; i<searchArray.length; i++)
 			{
 				System.out.print(searchArray[i] + " ");
@@ -107,7 +111,6 @@ public class CommandLineOutput {
 			}
 
 			//Printing out the searchArray
-			//System.out.println("in:");
 			for(int i=0; i<searchArray.length; i++)
 			{
 				System.out.print(searchArray[i] + " ");

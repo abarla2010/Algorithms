@@ -51,6 +51,7 @@ public class CommonUtility {
 		int[] unsortedArray = randomArrayGenerator();
 
 		//TODO: Change this to a merge sort or any other efficient sort
+
 		//Insertion Sort
 		int[] sortedArray = doInsertionSort(unsortedArray);
 

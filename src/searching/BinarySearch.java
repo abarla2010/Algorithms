@@ -25,15 +25,49 @@ public class BinarySearch {
 		int startIndex = 0;
 		int endIndex = inputArray.length-1;
 		int middleIndex = 0;
+		int temp = 0;
 
 		while(endIndex >= startIndex)
 		{
-
 			middleIndex = (endIndex + startIndex)/2;
 
 			if (key == inputArray[middleIndex])
 			{
 				index.add(middleIndex);
+
+				//Going front to search for all indices where the key is present
+				temp = middleIndex+1;
+				while(temp <= inputArray.length-1 && inputArray[temp] == key){
+
+					index.add(temp);
+					temp++;
+
+					/*if(firstFoundIndex == middleIndex){
+						firstFoundIndex++;
+					}
+					else{
+						index.add(firstFoundIndex);
+						firstFoundIndex++;
+					}*/
+				}
+
+
+				//Going back to search for all indices where the key is present
+				temp = middleIndex-1;
+				while (temp >=0 && inputArray[temp] == key){
+
+					index.add(temp);
+					temp--;
+
+					/*if(firstFoundIndex == middleIndex){
+						firstFoundIndex--;
+					}
+					else{
+						index.add(firstFoundIndex);
+						firstFoundIndex--;
+					}*/
+				}
+
 				break;
 			}
 			if(key < inputArray[middleIndex])
