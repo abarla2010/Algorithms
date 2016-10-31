@@ -6,6 +6,6 @@ package util;
  */
 public class Constants {
 
-	public static final int highestRandomNumber = 20;
-	public static final int maxRandomArraySize = 1000;
+	public static final int highestRandomNumber = 2;
+	public static final int maxRandomArraySize = 10;
 }
