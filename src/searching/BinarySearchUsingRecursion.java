@@ -14,8 +14,6 @@ public class BinarySearchUsingRecursion {
 	private static int[] sortedArray;
 	private static ArrayList outputArray = new ArrayList();
 
-	//TODO
-
 	public static void main(String[] args){
 
 		sortedArray = CommonUtility.randomSortedArrayGenerator();
