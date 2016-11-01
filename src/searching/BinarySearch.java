@@ -8,7 +8,6 @@ import java.util.ArrayList;
 /**
  * Binary Search Algorithm wiht log(n) time complexity
  * Created by abhishekbarla on 10/11/16.
- * TODO: This doesn't work with duplicate keys in the sorted array
  */
 public class BinarySearch {
 
@@ -41,14 +40,6 @@ public class BinarySearch {
 
 					index.add(temp);
 					temp++;
-
-					/*if(firstFoundIndex == middleIndex){
-						firstFoundIndex++;
-					}
-					else{
-						index.add(firstFoundIndex);
-						firstFoundIndex++;
-					}*/
 				}
 
 
@@ -58,14 +49,6 @@ public class BinarySearch {
 
 					index.add(temp);
 					temp--;
-
-					/*if(firstFoundIndex == middleIndex){
-						firstFoundIndex--;
-					}
-					else{
-						index.add(firstFoundIndex);
-						firstFoundIndex--;
-					}*/
 				}
 
 				break;
