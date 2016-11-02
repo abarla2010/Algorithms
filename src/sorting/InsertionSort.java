@@ -33,6 +33,7 @@ public class InsertionSort {
 				array[i+1] = array[i];
 				i = i-1;
 			}
+			//Then place the key appropriately
 			array[i+1] = key;
 		}
 		return array;
