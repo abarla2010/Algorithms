@@ -54,7 +54,7 @@ public class QuickSort {
 	}
 
 	/**
-	 * Main method for the Quick Sort Class
+	 * Main method for the Quick Sort Class.
 	 * @param args
 	 */
 	public static void main(String[] args){
