@@ -18,7 +18,7 @@ public class Anagram {
 	 */
 	public static void main(String[] args){
 
-		String input = "cats";
+		String input = "cat";
 		ArrayList<String> output = permutation(input);
 
 		CommandLineOutput.generalOutput("Anagrams Using Recursion", input, output);
@@ -62,5 +62,23 @@ public class Anagram {
 			}
 		}
 		return  arrayList;
+	}
+
+	public static ArrayList findAnagram(String inputString){
+		ArrayList output = anagram("",inputString);
+		return output;
+	}
+
+	private static ArrayList anagram(String prefix, String inputString){
+		int stringLength = inputString.length();
+		if(stringLength==0){
+			arrayList.add(prefix);
+		}
+		else{
+			for(int i=0; i < stringLength; i++){
+				anagram(prefix + inputString.charAt(i), inputString.substring(0,i) + inputString.substring(i+1, stringLength));
+			}
+		}
+		return arrayList;
 	}
 }

@@ -23,18 +23,21 @@ public class ReverseMatrix {
 				inputString = convertToString(input1DMatrix);
 				int[] output1DMatrix = reverseMatrix(input1DMatrix);
 				outputString = convertToString(output1DMatrix);
-			}
-			case "2D Row Reverse":{
-				methodName = "Reversing the Rows in a 2D Matrix";
-				inputString = convertToString(input2DMatrix);
-				int[][] output2DMatrix = reverseRows(input2DMatrix);
-				outputString = convertToString(output2DMatrix);
+				break;
 			}
 			case "2D Column Reverse":{
 				methodName = "Reversing the Columns in a 2D Matrix";
 				inputString = convertToString(input2DMatrix);
 				int[][] output2DMatrix = reverseColumns(input2DMatrix);
 				outputString = convertToString(output2DMatrix);
+				break;
+			}
+			case "2D Row Reverse":{
+				methodName = "Reversing the Rows in a 2D Matrix";
+				inputString = convertToString(input2DMatrix);
+				int[][] output2DMatrix = reverseRows(input2DMatrix);
+				outputString = convertToString(output2DMatrix);
+				break;
 			}
 		}
 		CommandLineOutput.generalOutput(methodName, inputString, outputString);
@@ -62,7 +65,7 @@ public class ReverseMatrix {
 	 * @param inputMatrix
 	 * @return
 	 */
-	public static int[][] reverseRows(int[][] inputMatrix){
+	public static int[][] reverseColumns(int[][] inputMatrix){
 
 		int temp = 0;
 
@@ -78,7 +81,7 @@ public class ReverseMatrix {
 	 * @param inputMatrix
 	 * @return
 	 */
-	public static int[][] reverseColumns(int[][] inputMatrix){
+	public static int[][] reverseRows(int[][] inputMatrix){
 		int[] temp1DMatrix;
 
 		for(int i=0; i<inputMatrix.length/2; i++){

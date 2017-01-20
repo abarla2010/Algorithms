@@ -23,6 +23,9 @@ public class DelimiterMatching {
 
 
 		Stack stack = new Stack();
+		if(inputString.length()==0){
+			return true;
+		}
 
 		for(int i=0; i<inputString.length(); i++){
 			if(inputString.charAt(i)== '{' || inputString.charAt(i)=='[' || inputString.charAt(i) == '('){
@@ -35,14 +38,12 @@ public class DelimiterMatching {
 				if ( (closingDelimiter == '}' && openingDelimiter != '{') ||
 						(closingDelimiter == ']' && openingDelimiter != '[')  ||
 						(closingDelimiter == ')' && openingDelimiter != '(')){
-					perfectMatch = false;
-					break;
+					return false;
 				}
 			}
 		}
 
-
-		return perfectMatch;
+		return stack.isEmpty();
 	}
 
 	public static void main(String[] args){
